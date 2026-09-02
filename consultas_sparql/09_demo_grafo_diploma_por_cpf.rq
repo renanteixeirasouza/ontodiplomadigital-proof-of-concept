@@ -1,5 +1,4 @@
 # Demonstração visual — grafo do diploma digital por CPF
-#
 # Consulta CONSTRUCT preparada para o modo Visual do GraphDB.
 # Retorna relações entre recursos e rótulos curtos para facilitar a leitura do grafo.
 
