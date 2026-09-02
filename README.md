@@ -1,6 +1,6 @@
 # OntoDiplomaDigital — Prova de Conceito
 
-Este repositório reúne os artefatos públicos da prova de conceito da **OntoDiplomaDigital**, ontologia operacional desenvolvida para representar semanticamente o subdomínio do Registro do Diploma Digital de Instituições de Ensino Superior brasileiras.
+Este repositório reúne os artefatos públicos da prova de conceito da **OntoDiplomaDigital**, ontologia operacional desenvolvida na dissertação de mestrado para representar semanticamente o subdomínio do Registro do Diploma Digital de Instituições de Ensino Superior brasileiras.
 
 O objetivo deste material é permitir que o leitor consulte, inspecione e reproduza parcialmente a demonstração operacional apresentada na dissertação. Os arquivos aqui disponibilizados mostram como dados tabulares fictícios foram representados em RDF, carregados com a TBox da ontologia e consultados por meio de SPARQL.
 
