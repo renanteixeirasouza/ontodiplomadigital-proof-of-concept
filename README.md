@@ -45,6 +45,12 @@ Se você não tem familiaridade com ontologias, RDF ou SPARQL, comece por:
 │   └── 11_demo_consulta_federada_qlever_wikidata_municipio_ibge.rq
 ├── graficos/
 │   └── fluxo_prova_conceito.svg
+├── graficos_dissertacao/
+│   ├── README.md
+│   ├── indice_graficos.md
+│   ├── manifesto_imagens_extraidas.csv
+│   ├── preview_imagens_extraidas.jpg
+│   └── imagens_extraidas_docx/
 ├── validacao/
 │   ├── relatorio_sanitizacao.json
 │   ├── verificacao_pos_sanitizacao.json
@@ -65,6 +71,7 @@ Se você não tem familiaridade com ontologias, RDF ou SPARQL, comece por:
 | `fontes_oficiais_mec/` | Cópias dos schemas XSD v1.05 do Ministério da Educação utilizados como fontes técnicas da modelagem. |
 | `consultas_sparql/` | Consultas SPARQL ligadas às questões de competência e às demonstrações visuais. |
 | `graficos/` | Representações visuais de apoio à leitura da prova de conceito. |
+| `graficos_dissertacao/` | Imagens e diagramas extraídos do documento canônico da dissertação para consulta e rastreabilidade. |
 | `validacao/` | Relatórios de verificação da sanitização, leitura dos arquivos e execução das consultas. |
 | `docs/` | Documentação explicativa para leitores, banca e interessados em reproduzir a demonstração. |
 
