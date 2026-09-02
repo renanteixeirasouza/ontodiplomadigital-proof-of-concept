@@ -1,6 +1,4 @@
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX odd: <https://w3id.org/ufes/ontodiplomadigital#>
+
 # Demonstração visual — grafo do diploma digital por CPF
 # Consulta CONSTRUCT preparada para o modo Visual do GraphDB.
 # Retorna relações entre recursos e rótulos curtos para facilitar a leitura do grafo.
