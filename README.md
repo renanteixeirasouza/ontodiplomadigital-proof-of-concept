@@ -26,6 +26,11 @@ Se você não tem familiaridade com ontologias, RDF ou SPARQL, comece por:
 │   ├── ontologia_operacional_individuos_ficticios_registro_diploma_amigavel_publico.csv
 │   ├── ontologia_operacional_individuos_ficticios_registro_diploma_wide_publico.csv
 │   └── tabela_individuos_registro_diploma_publico.csv
+├── fontes_oficiais_mec/
+│   ├── README.md
+│   ├── checksums_sha256.txt
+│   └── xsd_v1_05/
+│       └── arquivos XSD oficiais do Diploma Digital Brasileiro
 ├── consultas_sparql/
 │   ├── 01_qc1_instituicoes_emissao_registro.rq
 │   ├── 02_qc2_autenticidade_assinatura_registro_validacao.rq
@@ -57,6 +62,7 @@ Se você não tem familiaridade com ontologias, RDF ou SPARQL, comece por:
 |---|---|
 | `ontologia/` | Arquivos Turtle da ontologia: TBox e ABox pública fictícia. |
 | `dados/` | Arquivos tabulares usados como base da demonstração e versões auxiliares para inspeção. |
+| `fontes_oficiais_mec/` | Cópias dos schemas XSD v1.05 do Ministério da Educação utilizados como fontes técnicas da modelagem. |
 | `consultas_sparql/` | Consultas SPARQL ligadas às questões de competência e às demonstrações visuais. |
 | `graficos/` | Representações visuais de apoio à leitura da prova de conceito. |
 | `validacao/` | Relatórios de verificação da sanitização, leitura dos arquivos e execução das consultas. |
