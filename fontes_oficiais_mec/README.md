@@ -15,6 +15,8 @@ Os arquivos XSD não são artefatos autorais da OntoDiplomaDigital. Eles são fo
 
 Esta pasta não contém arquivos XML com dados reais de estudantes, instituições, diplomas ou processos acadêmicos.
 
+Os arquivos desta pasta são fontes oficiais externas e não constituem artefatos autorais da OntoDiplomaDigital. A licença CC BY 4.0 indicada no repositório aplica-se aos artefatos autorais da pesquisa, mas não altera a autoria ou as condições próprias de disponibilização dos schemas oficiais do Ministério da Educação.
+
 Fonte: Ministério da Educação — Diploma Digital Brasileiro.  
 Versão dos schemas utilizada na pesquisa: v1.05.  
 Finalidade de preservação: rastreabilidade acadêmica e reprodutibilidade da prova de conceito.

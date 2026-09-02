@@ -88,6 +88,12 @@ A prova de conceito demonstra que a OntoDiplomaDigital permite:
 
 A consulta `10_demo_consulta_federada_dbpedia_brasil.rq` usa `SERVICE` para combinar dados locais da ABox pública com dados externos da DBpedia sobre o recurso `Brazil`. A consulta `11_demo_consulta_federada_qlever_wikidata_municipio_ibge.rq` usa `SERVICE` para combinar a contagem local de diplomados fictícios por código IBGE de naturalidade com dados externos do Wikidata, consultados por meio do QLever. As duas consultas têm finalidade demonstrativa e dependem da disponibilidade dos endpoints externos. Não se trata de integração real com sistemas do MEC, e-MEC, IBGE ou Gov.br.
 
+## Licença
+
+Salvo indicação em contrário, os artefatos autorais deste repositório são disponibilizados sob a licença [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE.md).
+
+Os arquivos XSD preservados em `fontes_oficiais_mec/` são fontes oficiais externas do Ministério da Educação e foram incluídos apenas para fins de rastreabilidade acadêmica.
+
 ## Referência acadêmica
 
 Este repositório acompanha a dissertação de mestrado sobre a OntoDiplomaDigital. Na dissertação, ele deve ser citado como apêndice técnico da prova de conceito.
