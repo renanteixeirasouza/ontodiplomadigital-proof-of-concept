@@ -1,0 +1,31 @@
+# QC1 — Quais são a IES emissora e a IES registradora de determinado
+# diploma digital?
+#
+# Exemplo reprodutível com identificador sintético. O valor em VALUES pode
+# ser substituído pelo identificador de outro diploma presente no grafo.
+
+PREFIX odd: <https://w3id.org/ufes/ontodiplomadigital#>
+
+SELECT ?diploma ?identificadorDiploma
+       ?papelInstitucional ?ies ?nomeIes
+WHERE {
+  VALUES ?identificadorDiploma {
+    "urn:fake:diploma:001"
+  }
+
+  ?diploma a odd:DiplomaDigital ;
+           odd:identifier ?identificadorDiploma .
+
+  {
+    ?diploma odd:issuedBy ?ies .
+    BIND("emissão"@pt AS ?papelInstitucional)
+  }
+  UNION
+  {
+    ?diploma odd:registeredBy ?ies .
+    BIND("registro"@pt AS ?papelInstitucional)
+  }
+
+  ?ies odd:fullName ?nomeIes .
+}
+ORDER BY ?papelInstitucional ?nomeIes

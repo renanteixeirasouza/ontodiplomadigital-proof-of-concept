@@ -1,0 +1,39 @@
+# QC4 — Quem é o titular de determinado diploma, qual curso concluiu e quais
+# grau e título foram conferidos?
+
+PREFIX odd:  <https://w3id.org/ufes/ontodiplomadigital#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?diploma ?identificadorDiploma ?diplomado ?nomeDiplomado ?cpf
+       ?curso ?nomeCurso ?dataConclusao
+       ?grau ?grauLabel ?titulo ?tituloLabel
+WHERE {
+  VALUES ?identificadorDiploma {
+    "urn:fake:diploma:001"
+  }
+
+  ?diploma a odd:DiplomaDigital ;
+           odd:identifier ?identificadorDiploma ;
+           odd:hasHolder ?diplomado ;
+           odd:hasProgram ?curso .
+
+  ?diplomado odd:fullName ?nomeDiplomado ;
+             odd:cpf ?cpf .
+
+  # A ligação ao curso é estabelecida pelo mesmo diploma. A relação inversa
+  # odd:completedProgram pode ser inferida, mas não é exigida para a resposta.
+  OPTIONAL { ?diplomado odd:completedProgram ?curso . }
+
+  ?curso odd:courseName ?nomeCurso ;
+         odd:awardsDegree ?grau ;
+         odd:awardsTitle ?titulo .
+
+  ?grau skos:prefLabel ?grauLabel .
+  ?titulo skos:prefLabel ?tituloLabel .
+
+  FILTER(LANG(?grauLabel) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?tituloLabel) IN ("pt", "pt-BR", ""))
+
+  OPTIONAL { ?curso odd:conclusionDate ?dataConclusao . }
+}
+ORDER BY ?nomeDiplomado ?nomeCurso

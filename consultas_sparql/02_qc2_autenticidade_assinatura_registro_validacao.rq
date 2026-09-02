@@ -1,0 +1,45 @@
+# QC2 — Quais elementos representados permitem recuperar o registro, a
+# assinatura digital, o carimbo do tempo e o código de validação de
+# determinado diploma?
+#
+# A consulta recupera as evidências representadas no grafo. Ela não executa
+# validação criptográfica da assinatura XML nem consulta o código externamente.
+# O identificador sintético em VALUES pode ser substituído.
+
+PREFIX odd:  <https://w3id.org/ufes/ontodiplomadigital#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?diploma ?identificadorDiploma
+       ?registro ?dataRegistro
+       ?assinatura ?dataHoraAssinatura
+       ?carimboTempo ?dataHoraCarimbo
+       ?formatoAssinaturaLabel ?papelAssinaturaLabel
+       ?codigoValidacao ?valorCodigoValidacao
+WHERE {
+  VALUES ?identificadorDiploma {
+    "urn:fake:diploma:001"
+  }
+
+  ?diploma a odd:DiplomaDigital ;
+           odd:identifier ?identificadorDiploma ;
+           odd:hasRegistration ?registro ;
+           odd:hasSignature ?assinatura ;
+           odd:hasValidationCode ?codigoValidacao .
+
+  ?registro odd:registrationDate ?dataRegistro .
+
+  ?assinatura odd:signatureDateTime ?dataHoraAssinatura ;
+              odd:hasTimestamp ?carimboTempo ;
+              odd:hasSignatureFormat ?formatoAssinatura ;
+              odd:hasSignatureRole ?papelAssinatura .
+
+  ?carimboTempo odd:timestampDateTime ?dataHoraCarimbo .
+  ?codigoValidacao odd:validationCodeValue ?valorCodigoValidacao .
+
+  ?formatoAssinatura skos:prefLabel ?formatoAssinaturaLabel .
+  ?papelAssinatura skos:prefLabel ?papelAssinaturaLabel .
+
+  FILTER(LANG(?formatoAssinaturaLabel) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?papelAssinaturaLabel) IN ("pt", "pt-BR", ""))
+}
+ORDER BY ?assinatura

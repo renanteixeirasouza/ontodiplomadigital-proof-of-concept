@@ -1,0 +1,11 @@
+# Texto sugerido para o apêndice da dissertação
+
+## Apêndice — Repositório público da prova de conceito da OntoDiplomaDigital
+
+Os artefatos computacionais utilizados na prova de conceito da OntoDiplomaDigital foram organizados em repositório público, com a finalidade de permitir a inspeção dos arquivos, a reprodução parcial da demonstração operacional e a consulta dos recursos associados à ontologia. O repositório reúne a TBox da OntoDiplomaDigital, a ABox pública com instâncias fictícias, arquivos tabulares de apoio, consultas SPARQL, representação visual do fluxo da prova de conceito e relatórios de verificação.
+
+A disponibilização desse material complementa a apresentação dos resultados da pesquisa, sem substituir a discussão realizada no corpo da dissertação. O repositório permite ao leitor observar como os elementos do subdomínio do Registro do Diploma foram representados em RDF e como determinadas relações podem ser recuperadas por consultas SPARQL, incluindo vínculos entre diploma, diplomado, curso, instituições emissora e registradora, registro, assinatura digital, carimbo de tempo, código de validação e plataforma de acesso.
+
+Todos os dados disponibilizados são fictícios e sanitizados. CPFs, CNPJs, nomes pessoais, códigos de validação e registros acadêmicos foram substituídos por valores artificiais, de modo que o repositório não contém dados reais de estudantes, instituições, diplomas ou processos acadêmicos. A prova de conceito tem finalidade acadêmica e demonstrativa; portanto, não constitui validação externa do Diploma Digital Brasileiro, não realiza validação criptográfica de assinaturas digitais e não comprova integração institucional em ambiente de produção.
+
+O repositório deve ser consultado como apêndice técnico da pesquisa, especialmente para acesso aos arquivos Turtle, aos dados tabulares, às consultas SPARQL e aos relatórios de verificação utilizados na demonstração operacional da OntoDiplomaDigital.

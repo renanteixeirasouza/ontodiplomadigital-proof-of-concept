@@ -1,0 +1,45 @@
+# QC5 — Quais valores controlados qualificam grau, título, modalidade,
+# situação do diploma e formato ou papel da assinatura?
+
+PREFIX odd:  <https://w3id.org/ufes/ontodiplomadigital#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?categoria ?valorControlado ?rotulo
+       (COUNT(DISTINCT ?recursoQualificado) AS ?qtdUsos)
+WHERE {
+  {
+    ?recursoQualificado odd:awardsDegree ?valorControlado .
+    BIND("grau conferido"@pt AS ?categoria)
+  }
+  UNION
+  {
+    ?recursoQualificado odd:awardsTitle ?valorControlado .
+    BIND("título conferido"@pt AS ?categoria)
+  }
+  UNION
+  {
+    ?recursoQualificado odd:hasModeOfDelivery ?valorControlado .
+    BIND("modalidade de oferta"@pt AS ?categoria)
+  }
+  UNION
+  {
+    ?recursoQualificado odd:hasStatus ?valorControlado .
+    BIND("situação do diploma"@pt AS ?categoria)
+  }
+  UNION
+  {
+    ?recursoQualificado odd:hasSignatureFormat ?valorControlado .
+    BIND("formato de assinatura"@pt AS ?categoria)
+  }
+  UNION
+  {
+    ?recursoQualificado odd:hasSignatureRole ?valorControlado .
+    BIND("papel da assinatura"@pt AS ?categoria)
+  }
+
+  ?valorControlado a skos:Concept ;
+                   skos:prefLabel ?rotulo .
+  FILTER(LANG(?rotulo) IN ("pt", "pt-BR", ""))
+}
+GROUP BY ?categoria ?valorControlado ?rotulo
+ORDER BY ?categoria ?rotulo

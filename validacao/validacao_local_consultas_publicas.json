@@ -1,0 +1,161 @@
+{
+  "01_qc1_instituicoes_emissao_registro.rq": {
+    "status": "ok",
+    "rows": 2,
+    "sample": [
+      [
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1",
+        "urn:fake:diploma:001",
+        "emissão",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesEmissoraCaso1",
+        "Universidade do Vale do Conhecimento"
+      ]
+    ]
+  },
+  "02_qc2_autenticidade_assinatura_registro_validacao.rq": {
+    "status": "ok",
+    "rows": 1,
+    "sample": [
+      [
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1",
+        "urn:fake:diploma:001",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#registroCaso1",
+        "2027-01-15",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#assinaturaCaso1",
+        "2027-01-15T14:10:00",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#carimboTempoCaso1",
+        "2027-01-15T14:10:00",
+        "XAdES",
+        "assinatura PJ da registradora",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#codigoValidacaoPublico0757",
+        "CODIGO-VALIDACAO-FICTICIO-0002"
+      ]
+    ]
+  },
+  "03_qc3_diplomas_ies_periodo_modalidade.rq": {
+    "status": "ok",
+    "rows": 1,
+    "sample": [
+      [
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1",
+        "2027-01-10",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesEmissoraCaso1",
+        "Universidade do Vale do Conhecimento",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#cursoCaso1",
+        "Bacharelado em Gestao do Conhecimento Aplicado",
+        "https://w3id.org/ufes/ontodiplomadigital#Presencial",
+        "Presencial"
+      ]
+    ]
+  },
+  "04_qc4_diplomado_curso_concluido.rq": {
+    "status": "ok",
+    "rows": 1,
+    "sample": [
+      [
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1",
+        "urn:fake:diploma:001",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomadoCaso1",
+        "Pessoa Fictícia-0001",
+        "CPF-FICTICIO-0001",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#cursoCaso1",
+        "Bacharelado em Gestao do Conhecimento Aplicado",
+        "2026-12-18",
+        "https://w3id.org/ufes/ontodiplomadigital#Bacharelado",
+        "Bacharelado",
+        "https://w3id.org/ufes/ontodiplomadigital#Bacharel",
+        "Bacharel"
+      ]
+    ]
+  },
+  "05_qc5_valores_controlados.rq": {
+    "status": "ok",
+    "rows": 20,
+    "sample": [
+      [
+        "formato de assinatura",
+        "https://w3id.org/ufes/ontodiplomadigital#CAdES",
+        "CAdES",
+        "83"
+      ]
+    ]
+  },
+  "06_qc6_proveniencia_registro.rq": {
+    "status": "ok",
+    "rows": 303,
+    "sample": [
+      [
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesRegistradoraCaso1",
+        "Universidade Nacional da Curadoria",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#registroCaso1",
+        "2027-01-15",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#processoAdministrativo001",
+        "PROC-FAKE-2027-0001",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#responsavelRegistroCaso1",
+        "Pessoa Fictícia-0002",
+        "CPF-FICTICIO-0002",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#assinanteRegistroCaso1A",
+        "CPF-FICTICIO-0003",
+        "Reitor"
+      ]
+    ]
+  },
+  "07_qc7_acesso_por_cpf_plataforma.rq": {
+    "status": "ok",
+    "rows": 1,
+    "sample": [
+      [
+        "CPF-FICTICIO-0012",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomadoLote001",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaLote001",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#plataformaGovBrAcademicoFicticio",
+        "GovBR Academico Ficticio",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#codigoValidacaoPublico0759",
+        "CODIGO-VALIDACAO-FICTICIO-0006"
+      ]
+    ]
+  },
+  "08_demo_visao_360_diploma_por_cpf.rq": {
+    "status": "ok",
+    "rows": 1,
+    "sample": [
+      [
+        "CPF-FICTICIO-0012",
+        "Pessoa Fictícia-0012",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaLote001",
+        "urn:fake:diploma:003",
+        "Bacharelado em Ciencia de Dados Publicos",
+        "Bacharelado",
+        "Bacharel",
+        "Presencial",
+        "2026-01-13",
+        "2026-02-04",
+        "2026-02-14",
+        "Universidade Aberta do Conhecimento",
+        "Universidade Registradora do Brasil Digital",
+        "2026-02-19",
+        "PROC-FAKE-2026-0003",
+        "Pessoa Fictícia-0013",
+        "Ativo",
+        "XAdES",
+        "2026-02-19T09:11:00",
+        "2026-02-19T09:11:00",
+        "CODIGO-VALIDACAO-FICTICIO-0006",
+        "GovBR Academico Ficticio",
+        "Metadados de registro, assinatura e validação recuperados no grafo sintético"
+      ]
+    ]
+  },
+  "09_demo_grafo_diploma_por_cpf.rq": {
+    "status": "ok",
+    "rows": 18,
+    "sample": [
+      [
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#registroLote001",
+        "https://w3id.org/ufes/ontodiplomadigital#hasAdministrativeProcess",
+        "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#processoAdministrativo003"
+      ]
+    ]
+  }
+}

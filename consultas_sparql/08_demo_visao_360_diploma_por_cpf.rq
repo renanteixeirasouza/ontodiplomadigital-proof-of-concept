@@ -1,0 +1,99 @@
+# Demonstração — Visão 360 do diploma digital por CPF
+#
+# Síntese das questões QC2, QC4, QC5, QC6 e QC7 em uma resposta orientada
+# ao usuário. O CPF e todos os demais dados retornados são sintéticos.
+# A consulta recupera evidências registradas no grafo; não valida a assinatura
+# criptograficamente e não consulta uma plataforma governamental real.
+
+PREFIX odd:     <https://w3id.org/ufes/ontodiplomadigital#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema:  <https://schema.org/>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?cpf
+       ?titular
+       ?diploma
+       ?identificadorDiploma
+       ?cursoConcluido
+       ?grau
+       ?tituloConferido
+       ?modalidade
+       ?dataConclusao
+       ?dataExpedicao
+       ?dataEmissao
+       ?iesEmissora
+       ?iesRegistradora
+       ?dataRegistro
+       ?numeroProcesso
+       ?responsavelRegistro
+       ?situacaoDiploma
+       ?formatoAssinatura
+       ?dataHoraAssinatura
+       ?dataHoraCarimbo
+       ?codigoValidacao
+       ?plataformaAcesso
+       ?evidenciaDisponivel
+WHERE {
+  # Parâmetro de demonstração: CPF sintético existente na ABox.
+  VALUES ?cpf {
+    "CPF-FICTICIO-0012"
+  }
+
+  ?diplomado a odd:Diplomado ;
+             odd:cpf ?cpf ;
+             odd:fullName ?titular .
+
+  ?diploma a odd:DiplomaDigital ;
+           odd:identifier ?identificadorDiploma ;
+           odd:hasHolder ?diplomado ;
+           odd:hasProgram ?curso ;
+           odd:issuedBy ?recursoIesEmissora ;
+           odd:registeredBy ?recursoIesRegistradora ;
+           odd:hasRegistration ?registro ;
+           odd:hasStatus ?recursoSituacao ;
+           odd:hasSignature ?assinatura ;
+           odd:hasValidationCode ?recursoCodigo ;
+           odd:isAccessibleVia ?plataforma ;
+           odd:issueDate ?dataEmissao .
+
+  ?curso odd:courseName ?cursoConcluido ;
+         odd:awardsDegree ?recursoGrau ;
+         odd:awardsTitle ?recursoTitulo ;
+         odd:hasModeOfDelivery ?recursoModalidade ;
+         odd:conclusionDate ?dataConclusao .
+
+  ?recursoGrau skos:prefLabel ?grau .
+  ?recursoTitulo skos:prefLabel ?tituloConferido .
+  ?recursoModalidade skos:prefLabel ?modalidade .
+  ?recursoSituacao skos:prefLabel ?situacaoDiploma .
+
+  ?recursoIesEmissora odd:fullName ?iesEmissora .
+  ?recursoIesRegistradora odd:fullName ?iesRegistradora .
+
+  ?registro odd:diplomaExpeditionDate ?dataExpedicao ;
+            odd:registrationDate ?dataRegistro ;
+            odd:hasAdministrativeProcess ?processo ;
+            odd:hasRegistrationResponsible ?responsavel .
+  ?processo odd:identifier ?numeroProcesso .
+  ?responsavel odd:responsibleName ?responsavelRegistro .
+
+  ?assinatura odd:hasSignatureFormat ?recursoFormato ;
+              odd:signatureDateTime ?dataHoraAssinatura ;
+              odd:hasTimestamp ?carimbo .
+  ?recursoFormato skos:prefLabel ?formatoAssinatura .
+  ?carimbo odd:timestampDateTime ?dataHoraCarimbo .
+
+  ?recursoCodigo odd:validationCodeValue ?codigoValidacao .
+  ?plataforma odd:fullName ?plataformaAcesso .
+
+  FILTER(LANG(?grau) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?tituloConferido) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?modalidade) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?situacaoDiploma) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?formatoAssinatura) IN ("pt", "pt-BR", ""))
+
+  BIND(
+    "Metadados de registro, assinatura e validação recuperados no grafo sintético"@pt
+    AS ?evidenciaDisponivel
+  )
+}

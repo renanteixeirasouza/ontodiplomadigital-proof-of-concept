@@ -1,0 +1,35 @@
+# QC7 — Por meio de qual plataforma governamental o diploma de determinado
+# cidadão, identificado por CPF, é representado como acessível no conjunto
+# sintético?
+#
+# O exemplo consulta uma afirmação sintética de acesso via recurso fictício.
+# Ele não realiza chamada ao Gov.br e não comprova integração operacional real.
+
+PREFIX odd: <https://w3id.org/ufes/ontodiplomadigital#>
+
+SELECT ?cpf ?diplomado ?diploma
+       ?plataforma ?nomePlataforma
+       ?codigoValidacao ?valorCodigoValidacao
+WHERE {
+  VALUES ?cpf {
+    "CPF-FICTICIO-0012"
+  }
+
+  ?diplomado a odd:Diplomado ;
+             odd:cpf ?cpf .
+
+  ?diploma a odd:DiplomaDigital ;
+           odd:hasHolder ?diplomado ;
+           odd:isAccessibleVia ?plataforma .
+
+  ?plataforma a odd:PlataformaGoverno ;
+              odd:fullName ?nomePlataforma .
+
+  FILTER(CONTAINS(LCASE(STR(?nomePlataforma)), "gov"))
+
+  OPTIONAL {
+    ?diploma odd:hasValidationCode ?codigoValidacao .
+    ?codigoValidacao odd:validationCodeValue ?valorCodigoValidacao .
+  }
+}
+ORDER BY ?diploma

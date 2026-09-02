@@ -1,0 +1,33 @@
+{
+  "stats": {
+    "dados_diplomas_pratica_mapeamento_publico.csv": {
+      "rows": 252,
+      "cols": 116,
+      "delimiter": ","
+    },
+    "ontologia_operacional_individuos_ficticios_registro_diploma_amigavel_publico.csv": {
+      "rows": 252,
+      "cols": 102,
+      "delimiter": ","
+    },
+    "ontologia_operacional_individuos_ficticios_registro_diploma_wide_publico.csv": {
+      "rows": 3358,
+      "cols": 98,
+      "delimiter": ","
+    },
+    "tabela_individuos_registro_diploma_publico.csv": {
+      "rows": 252,
+      "cols": 24,
+      "delimiter": ";"
+    },
+    "ontologia_operacional_individuos_ficticios_registro_diploma_publico.ttl": {
+      "chars": 1291428
+    }
+  },
+  "maps_counts": {
+    "cpf": 1071,
+    "cnpj": 44,
+    "person": 1657,
+    "validation_code": 1008
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "tbox_triples": 3009,
+  "combined_triples": 28562,
+  "abox_added_triples_approx": 25553,
+  "diplomas": 252,
+  "diplomados": 252,
+  "cursos": 189,
+  "registros": 189,
+  "assinaturas": 252,
+  "codigos_validacao": 252,
+  "diplomas_com_titular": 252,
+  "diplomas_com_curso": 252,
+  "diplomas_com_emissora": 252,
+  "diplomas_com_registradora": 252,
+  "diplomas_com_registro": 252,
+  "diplomas_com_codigo_validacao": 252,
+  "literals_with_cpf_ficticio": 1071,
+  "literals_with_cnpj_ficticio": 22,
+  "sample_query_rows": 5,
+  "sample_query_first": [
+    "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1",
+    "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomadoCaso1",
+    "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#cursoCaso1",
+    "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesEmissoraCaso1",
+    "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesRegistradoraCaso1"
+  ]
+}

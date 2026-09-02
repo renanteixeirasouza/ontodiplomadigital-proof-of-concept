@@ -1,0 +1,35 @@
+# QC3 — Quais diplomas foram emitidos por determinada IES, em período
+# definido, segundo a modalidade de oferta do curso?
+#
+# Exemplo reprodutível com dados sintéticos. Os valores em VALUES e nas datas
+# podem ser substituídos por outros parâmetros de interesse.
+
+PREFIX odd:  <https://w3id.org/ufes/ontodiplomadigital#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?diploma ?dataEmissao ?ies ?nomeIes ?curso ?nomeCurso
+       ?modalidade ?modalidadeLabel
+WHERE {
+  VALUES ?nomeIes {
+    "Universidade do Vale do Conhecimento"
+  }
+  VALUES ?modalidadeLabel {
+    "Presencial"@pt
+    "Educação a Distância"@pt
+  }
+
+  ?diploma a odd:DiplomaDigital ;
+           odd:issuedBy ?ies ;
+           odd:issueDate ?dataEmissao ;
+           odd:hasProgram ?curso .
+
+  ?ies odd:fullName ?nomeIes .
+  ?curso odd:courseName ?nomeCurso ;
+         odd:hasModeOfDelivery ?modalidade .
+  ?modalidade skos:prefLabel ?modalidadeLabel .
+
+  FILTER(?dataEmissao >= "2027-01-01"^^xsd:date &&
+         ?dataEmissao <= "2027-12-31"^^xsd:date)
+}
+ORDER BY ?dataEmissao ?modalidadeLabel ?nomeCurso

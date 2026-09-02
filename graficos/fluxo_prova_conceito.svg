@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Fluxo da prova de conceito da OntoDiplomaDigital</title>
+  <desc id="desc">Diagrama vertical com as etapas: dados tabulares fictícios, mapeamento, ABox, carga no GraphDB, consultas SPARQL e resultados demonstrativos.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 28px Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 16px Arial, sans-serif; fill: #475569; }
+      .box { fill: #ffffff; stroke: #2563eb; stroke-width: 2; rx: 18; }
+      .box2 { fill: #eff6ff; stroke: #2563eb; stroke-width: 2; rx: 18; }
+      .box3 { fill: #ecfdf5; stroke: #059669; stroke-width: 2; rx: 18; }
+      .label { font: 700 18px Arial, sans-serif; fill: #0f172a; }
+      .text { font: 400 14px Arial, sans-serif; fill: #334155; }
+      .small { font: 400 12px Arial, sans-serif; fill: #64748b; }
+      .arrow { stroke: #334155; stroke-width: 2.5; marker-end: url(#arrowhead); fill: none; }
+      .note { fill: #fff7ed; stroke: #f97316; stroke-width: 1.5; rx: 14; }
+      .noteText { font: 700 14px Arial, sans-serif; fill: #9a3412; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="900" height="620"/>
+
+  <text class="title" x="450" y="46" text-anchor="middle">Fluxo da prova de conceito</text>
+  <text class="subtitle" x="450" y="72" text-anchor="middle">OntoDiplomaDigital — demonstração com dados fictícios e sanitizados</text>
+
+  <rect class="box" x="210" y="105" width="480" height="72"/>
+  <text class="label" x="450" y="133" text-anchor="middle">1. Dados tabulares públicos</text>
+  <text class="text" x="450" y="156" text-anchor="middle">CSV com diplomas, pessoas, cursos, registros e assinaturas fictícias</text>
+
+  <path class="arrow" d="M450 177 L450 214"/>
+
+  <rect class="box2" x="210" y="215" width="480" height="72"/>
+  <text class="label" x="450" y="243" text-anchor="middle">2. Mapeamento semântico</text>
+  <text class="text" x="450" y="266" text-anchor="middle">Transformação dos campos em recursos, propriedades e relações RDF</text>
+
+  <path class="arrow" d="M450 287 L450 324"/>
+
+  <rect class="box" x="80" y="325" width="340" height="82"/>
+  <text class="label" x="250" y="354" text-anchor="middle">3A. TBox</text>
+  <text class="text" x="250" y="377" text-anchor="middle">Classes, propriedades, restrições</text>
+  <text class="small" x="250" y="397" text-anchor="middle">OntoDiplomaDigital_registro_diploma.ttl</text>
+
+  <rect class="box" x="480" y="325" width="340" height="82"/>
+  <text class="label" x="650" y="354" text-anchor="middle">3B. ABox</text>
+  <text class="text" x="650" y="377" text-anchor="middle">Instâncias fictícias do Registro do Diploma</text>
+  <text class="small" x="650" y="397" text-anchor="middle">individuos_ficticios_publico.ttl</text>
+
+  <path class="arrow" d="M250 407 C250 440, 450 430, 450 458"/>
+  <path class="arrow" d="M650 407 C650 440, 450 430, 450 458"/>
+
+  <rect class="box2" x="210" y="458" width="480" height="72"/>
+  <text class="label" x="450" y="486" text-anchor="middle">4. Carga no GraphDB</text>
+  <text class="text" x="450" y="509" text-anchor="middle">TBox + ABox no repositório RDF diplomaDB</text>
+
+  <path class="arrow" d="M450 530 L450 560"/>
+
+  <rect class="box3" x="80" y="560" width="210" height="44"/>
+  <text class="label" x="185" y="588" text-anchor="middle">Consultas SPARQL</text>
+
+  <rect class="box3" x="345" y="560" width="210" height="44"/>
+  <text class="label" x="450" y="588" text-anchor="middle">Tabela 360</text>
+
+  <rect class="box3" x="610" y="560" width="210" height="44"/>
+  <text class="label" x="715" y="588" text-anchor="middle">Grafo visual</text>
+
+  <path class="arrow" d="M450 530 C365 545, 260 545, 185 560"/>
+  <path class="arrow" d="M450 530 L450 560"/>
+  <path class="arrow" d="M450 530 C535 545, 640 545, 715 560"/>
+
+  <rect class="note" x="660" y="108" width="190" height="58"/>
+  <text class="noteText" x="755" y="133" text-anchor="middle">Sem dados reais</text>
+  <text class="small" x="755" y="153" text-anchor="middle">Uso acadêmico demonstrativo</text>
+</svg>

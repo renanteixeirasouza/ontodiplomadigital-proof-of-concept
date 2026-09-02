@@ -1,0 +1,123 @@
+# Demonstração visual — grafo do diploma digital por CPF
+#
+# Consulta CONSTRUCT preparada para o modo Visual do GraphDB.
+# Retorna relações entre recursos e rótulos curtos para facilitar a leitura do grafo.
+
+PREFIX odd:  <https://w3id.org/ufes/ontodiplomadigital#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  ?diploma rdfs:label ?rotuloDiploma ;
+           odd:hasHolder ?diplomado ;
+           odd:hasProgram ?curso ;
+           odd:issuedBy ?iesEmissora ;
+           odd:registeredBy ?iesRegistradora ;
+           odd:hasRegistration ?registro ;
+           odd:hasSignature ?assinatura ;
+           odd:hasValidationCode ?codigoValidacao ;
+           odd:isAccessibleVia ?plataforma ;
+           odd:hasStatus ?situacaoDiploma .
+
+  ?diplomado rdfs:label ?titular .
+
+  ?curso rdfs:label ?cursoConcluido ;
+         odd:awardsDegree ?grau ;
+         odd:awardsTitle ?titulo ;
+         odd:hasModeOfDelivery ?modalidade .
+
+  ?iesEmissora rdfs:label ?nomeIesEmissora .
+  ?iesRegistradora rdfs:label ?nomeIesRegistradora .
+  ?plataforma rdfs:label ?nomePlataforma .
+  ?codigoValidacao rdfs:label ?valorCodigoValidacao .
+
+  ?situacaoDiploma rdfs:label ?labelSituacao .
+  ?grau rdfs:label ?labelGrau .
+  ?titulo rdfs:label ?labelTitulo .
+  ?modalidade rdfs:label ?labelModalidade .
+
+  ?registro rdfs:label ?rotuloRegistro ;
+            odd:hasAdministrativeProcess ?processo ;
+            odd:hasRegistrationResponsible ?responsavelRegistro ;
+            odd:hasRegistrationSigner ?assinanteRegistro .
+
+  ?processo rdfs:label ?numeroProcesso .
+  ?responsavelRegistro rdfs:label ?nomeResponsavelRegistro .
+  ?assinanteRegistro rdfs:label ?nomeAssinanteRegistro .
+
+  ?assinatura rdfs:label ?rotuloAssinatura ;
+              odd:hasSignatureFormat ?formatoAssinatura ;
+              odd:hasSignatureRole ?papelAssinatura ;
+              odd:hasTimestamp ?carimboTempo .
+
+  ?formatoAssinatura rdfs:label ?labelFormatoAssinatura .
+  ?papelAssinatura rdfs:label ?labelPapelAssinatura .
+  ?carimboTempo rdfs:label ?rotuloCarimboTempo .
+}
+WHERE {
+  VALUES ?cpf {
+    "CPF-FICTICIO-0012"
+  }
+
+  ?diplomado a odd:Diplomado ;
+             odd:cpf ?cpf ;
+             odd:fullName ?titular .
+
+  ?diploma a odd:DiplomaDigital ;
+           odd:identifier ?identificadorDiploma ;
+           odd:hasHolder ?diplomado ;
+           odd:hasProgram ?curso ;
+           odd:issuedBy ?iesEmissora ;
+           odd:registeredBy ?iesRegistradora ;
+           odd:hasRegistration ?registro ;
+           odd:hasSignature ?assinatura ;
+           odd:hasValidationCode ?codigoValidacao ;
+           odd:isAccessibleVia ?plataforma ;
+           odd:hasStatus ?situacaoDiploma .
+
+  ?curso odd:courseName ?cursoConcluido ;
+         odd:awardsDegree ?grau ;
+         odd:awardsTitle ?titulo ;
+         odd:hasModeOfDelivery ?modalidade .
+
+  ?iesEmissora odd:fullName ?nomeIesEmissora .
+  ?iesRegistradora odd:fullName ?nomeIesRegistradora .
+  ?plataforma odd:fullName ?nomePlataforma .
+  ?codigoValidacao odd:validationCodeValue ?valorCodigoValidacao .
+
+  ?situacaoDiploma skos:prefLabel ?labelSituacao .
+  ?grau skos:prefLabel ?labelGrau .
+  ?titulo skos:prefLabel ?labelTitulo .
+  ?modalidade skos:prefLabel ?labelModalidade .
+
+  ?registro odd:hasAdministrativeProcess ?processo ;
+            odd:hasRegistrationResponsible ?responsavelRegistro .
+
+  OPTIONAL {
+    ?registro odd:hasRegistrationSigner ?assinanteRegistro .
+    ?assinanteRegistro odd:fullName ?nomeAssinanteRegistro .
+  }
+
+  ?processo odd:identifier ?numeroProcesso .
+  ?responsavelRegistro odd:responsibleName ?nomeResponsavelRegistro .
+
+  ?assinatura odd:hasSignatureFormat ?formatoAssinatura ;
+              odd:hasSignatureRole ?papelAssinatura ;
+              odd:hasTimestamp ?carimboTempo .
+
+  ?formatoAssinatura skos:prefLabel ?labelFormatoAssinatura .
+  ?papelAssinatura skos:prefLabel ?labelPapelAssinatura .
+  ?carimboTempo odd:timestampDateTime ?dataHoraCarimbo .
+
+  FILTER(LANG(?labelSituacao) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?labelGrau) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?labelTitulo) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?labelModalidade) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?labelFormatoAssinatura) IN ("pt", "pt-BR", ""))
+  FILTER(LANG(?labelPapelAssinatura) IN ("pt", "pt-BR", ""))
+
+  BIND("Diploma" AS ?rotuloDiploma)
+  BIND("Registro" AS ?rotuloRegistro)
+  BIND("Assinatura" AS ?rotuloAssinatura)
+  BIND("Carimbo" AS ?rotuloCarimboTempo)
+}

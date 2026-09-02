@@ -1,0 +1,36 @@
+# QC6 — Qual é a proveniência do registro, incluindo IES registradora,
+# agentes, data e processo administrativo?
+
+PREFIX odd: <https://w3id.org/ufes/ontodiplomadigital#>
+
+SELECT ?diploma
+       ?iesRegistradora ?nomeIesRegistradora
+       ?registro ?dataRegistro
+       ?processoAdministrativo ?numeroProcesso
+       ?responsavel ?nomeResponsavel ?cpfResponsavel
+       ?assinanteRegistro ?cpfAssinanteRegistro ?cargoAssinanteRegistro
+WHERE {
+  ?diploma a odd:DiplomaDigital ;
+           odd:registeredBy ?iesRegistradora ;
+           odd:hasRegistration ?registro .
+
+  ?iesRegistradora odd:fullName ?nomeIesRegistradora .
+
+  ?registro odd:registrationDate ?dataRegistro ;
+            odd:hasAdministrativeProcess ?processoAdministrativo ;
+            odd:hasRegistrationResponsible ?responsavel .
+
+  ?processoAdministrativo odd:identifier ?numeroProcesso .
+
+  ?responsavel odd:responsibleName ?nomeResponsavel ;
+               odd:responsibleCpf ?cpfResponsavel .
+
+  OPTIONAL {
+    ?registro odd:hasRegistrationSigner ?assinanteRegistro .
+    ?assinanteRegistro odd:registrationSignerCpf ?cpfAssinanteRegistro .
+    OPTIONAL {
+      ?assinanteRegistro odd:registrationSignerRole ?cargoAssinanteRegistro .
+    }
+  }
+}
+ORDER BY ?diploma ?assinanteRegistro
