@@ -14,7 +14,8 @@ Esta pasta contém as consultas usadas para verificar a OntoDiplomaDigital na pr
 | `08_demo_visao_360_diploma_por_cpf.rq` | Consolida uma visão tabular de um diploma fictício a partir de CPF. |
 | `09_demo_grafo_diploma_por_cpf.rq` | Gera um grafo visual das principais relações de um diploma fictício. |
 | `10_demo_consulta_federada_dbpedia_brasil.rq` | Demonstra consulta federada com `SERVICE`, combinando dados locais fictícios com dados externos da DBpedia sobre o Brasil. |
+| `11_demo_consulta_federada_qlever_wikidata_municipio_ibge.rq` | Demonstra consulta federada com `SERVICE`, combinando código IBGE de naturalidade presente no `diplomaDB` com município e país recuperados no Wikidata via QLever. |
 
-As consultas foram preparadas para a ABox pública sanitizada. O CPF de demonstração usado nas consultas 07, 08, 09 e 10 é `CPF-FICTICIO-0012`.
+As consultas foram preparadas para a ABox pública sanitizada. O CPF de demonstração usado nas consultas 07, 08, 09 e 10 é `CPF-FICTICIO-0012`. A consulta 11 utiliza o código IBGE `3550308`, correspondente ao município de São Paulo na fonte externa consultada.
 
-A consulta 10 depende da disponibilidade do endpoint público da DBpedia. Ela não representa integração real com sistemas do MEC, e-MEC ou Gov.br.
+As consultas federadas dependem da disponibilidade dos endpoints públicos utilizados. Elas não representam integração real com sistemas do MEC, e-MEC, IBGE ou Gov.br.

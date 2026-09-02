@@ -1,0 +1,51 @@
+# Demonstração federada — naturalidade no diplomaDB e município no Wikidata via QLever
+#
+# Esta consulta demonstra federação entre o repositório local diplomaDB e um endpoint
+# externo do Wikidata fornecido pelo QLever.
+#
+# A sintaxe que liga o diplomaDB ao Wikidata/QLever é o bloco:
+# SERVICE <https://qlever.dev/api/wikidata> { ... }
+# O que fica fora desse bloco é resolvido no diplomaDB; o que fica dentro dele é enviado
+# ao endpoint externo. A variável ?codigoIbge, calculada localmente a partir da ABox,
+# é reutilizada dentro do SERVICE para localizar, no Wikidata, o município correspondente.
+#
+# A consulta é demonstrativa: não consulta sistemas reais do MEC, e-MEC, IBGE ou Gov.br,
+# não valida diplomas reais e depende da disponibilidade do endpoint externo.
+
+PREFIX odd:  <https://w3id.org/ufes/ontodiplomadigital#>
+PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?codigoIbge
+       ?municipioWikidata
+       ?municipioLabel
+       ?pais
+       ?paisLabel
+       ?qtdDiplomados
+WHERE {
+  {
+    SELECT ?codigoIbge
+           (COUNT(DISTINCT ?diplomado) AS ?qtdDiplomados)
+    WHERE {
+      ?diplomado a odd:Diplomado ;
+                 odd:hasBirthPlace ?localNaturalidade .
+
+      ?localNaturalidade odd:ibgeMunicipalityCode ?codigoIbge .
+
+      FILTER(STR(?codigoIbge) = "3550308")
+    }
+    GROUP BY ?codigoIbge
+  }
+
+  SERVICE <https://qlever.dev/api/wikidata> {
+    ?municipioWikidata
+        wdt:P1585 ?codigoIbge ;
+        rdfs:label ?municipioLabel ;
+        wdt:P17 ?pais .
+
+    ?pais rdfs:label ?paisLabel .
+
+    FILTER(LANG(?municipioLabel) = "pt")
+    FILTER(LANG(?paisLabel) = "pt")
+  }
+}

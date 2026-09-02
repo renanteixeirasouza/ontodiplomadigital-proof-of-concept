@@ -36,7 +36,8 @@ Se você não tem familiaridade com ontologias, RDF ou SPARQL, comece por:
 │   ├── 07_qc7_acesso_por_cpf_plataforma.rq
 │   ├── 08_demo_visao_360_diploma_por_cpf.rq
 │   ├── 09_demo_grafo_diploma_por_cpf.rq
-│   └── 10_demo_consulta_federada_dbpedia_brasil.rq
+│   ├── 10_demo_consulta_federada_dbpedia_brasil.rq
+│   └── 11_demo_consulta_federada_qlever_wikidata_municipio_ibge.rq
 ├── graficos/
 │   └── fluxo_prova_conceito.svg
 ├── validacao/
@@ -79,7 +80,7 @@ A prova de conceito demonstra que a OntoDiplomaDigital permite:
 
 ## Consulta federada
 
-A consulta `10_demo_consulta_federada_dbpedia_brasil.rq` usa `SERVICE` para combinar dados locais da ABox pública com dados externos da DBpedia sobre o recurso `Brazil`. Ela tem finalidade demonstrativa e depende da disponibilidade do endpoint público da DBpedia. Não se trata de integração real com sistemas do MEC, e-MEC ou Gov.br.
+A consulta `10_demo_consulta_federada_dbpedia_brasil.rq` usa `SERVICE` para combinar dados locais da ABox pública com dados externos da DBpedia sobre o recurso `Brazil`. A consulta `11_demo_consulta_federada_qlever_wikidata_municipio_ibge.rq` usa `SERVICE` para combinar a contagem local de diplomados fictícios por código IBGE de naturalidade com dados externos do Wikidata, consultados por meio do QLever. As duas consultas têm finalidade demonstrativa e dependem da disponibilidade dos endpoints externos. Não se trata de integração real com sistemas do MEC, e-MEC, IBGE ou Gov.br.
 
 ## Referência acadêmica
 

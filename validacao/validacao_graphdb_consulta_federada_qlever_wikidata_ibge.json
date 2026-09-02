@@ -1,0 +1,29 @@
+{
+  "consulta": "consultas_sparql/11_demo_consulta_federada_qlever_wikidata_municipio_ibge.rq",
+  "ambiente": "GraphDB, repositorio diplomaDB",
+  "data_execucao": "2026-09-02",
+  "tipo": "consulta federada demonstrativa",
+  "fonte_local": "ABox publica ficticia da OntoDiplomaDigital carregada no repositorio diplomaDB",
+  "fonte_externa": "Wikidata via QLever",
+  "endpoint_externo": "https://qlever.dev/api/wikidata",
+  "criterio_local": {
+    "propriedade": "odd:ibgeMunicipalityCode",
+    "valor": "3550308"
+  },
+  "resultado": {
+    "status": "executada com sucesso",
+    "linhas_retornadas": 1,
+    "municipioWikidata": "http://www.wikidata.org/entity/Q174",
+    "municipioLabel": "São Paulo",
+    "pais": "http://www.wikidata.org/entity/Q155",
+    "paisLabel": "Brasil",
+    "qtdDiplomados": 30
+  },
+  "limites": [
+    "A consulta nao acessa sistemas reais do MEC, e-MEC, IBGE ou Gov.br.",
+    "A consulta nao valida diplomas reais.",
+    "A consulta nao realiza validacao criptografica de assinatura digital.",
+    "A contagem refere-se apenas a diplomados ficticios presentes na ABox publica.",
+    "A reproducao depende da disponibilidade do endpoint publico QLever/Wikidata."
+  ]
+}

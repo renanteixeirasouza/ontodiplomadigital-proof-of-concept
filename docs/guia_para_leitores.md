@@ -39,6 +39,7 @@ As consultas 01 a 07 estão relacionadas às questões de competência da ontolo
 - `08_demo_visao_360_diploma_por_cpf.rq`: retorna uma visão tabular consolidada de um diploma a partir de um CPF fictício;
 - `09_demo_grafo_diploma_por_cpf.rq`: gera um grafo visual com as principais relações do diploma.
 - `10_demo_consulta_federada_dbpedia_brasil.rq`: demonstra a combinação entre dados locais fictícios e uma fonte externa de dados ligados, usando DBpedia.
+- `11_demo_consulta_federada_qlever_wikidata_municipio_ibge.rq`: demonstra a combinação entre uma contagem local de diplomados fictícios por código IBGE e a identificação externa do município no Wikidata via QLever.
 
 ### 4. Validação
 
@@ -50,4 +51,4 @@ O resultado não deve ser entendido como um sistema de produção para emissão 
 
 O uso de dados fictícios permite tornar os artefatos públicos sem expor informações pessoais, acadêmicas ou institucionais reais.
 
-A consulta federada tem caráter demonstrativo. Ela evidencia a possibilidade técnica de combinar o grafo local com uma fonte externa, mas não corresponde a integração institucional real com sistemas oficiais.
+As consultas federadas têm caráter demonstrativo. Elas evidenciam a possibilidade técnica de combinar o grafo local com fontes externas, mas não correspondem a integração institucional real com sistemas oficiais.

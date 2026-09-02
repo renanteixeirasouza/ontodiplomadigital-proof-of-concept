@@ -38,7 +38,7 @@ Para uma verificação rápida, recomenda-se começar por:
 
 - `08_demo_visao_360_diploma_por_cpf.rq`;
 - `09_demo_grafo_diploma_por_cpf.rq`.
-- `10_demo_consulta_federada_dbpedia_brasil.rq`, caso o ambiente tenha acesso à internet e permita consultas federadas externas.
+- `10_demo_consulta_federada_dbpedia_brasil.rq` e `11_demo_consulta_federada_qlever_wikidata_municipio_ibge.rq`, caso o ambiente tenha acesso à internet e permita consultas federadas externas.
 
 ## 5. Gerar o grafo visual
 
@@ -58,6 +58,8 @@ A consulta 09 deve gerar um grafo visual centrado em um diploma fictício, ligad
 
 A consulta 10 deve retornar dados locais de um diploma fictício combinados com dados externos da DBpedia sobre o recurso `Brazil`.
 
+A consulta 11 deve retornar a contagem local de diplomados fictícios associados ao código IBGE `3550308` e complementar esse resultado com o município e o país recuperados no Wikidata via QLever.
+
 ## Limites da reprodução
 
-A reprodução confirma a leitura e consulta dos dados fictícios da prova de conceito. Ela não valida assinaturas criptográficas reais, não consulta plataformas governamentais reais e não testa implantação em ambiente institucional de produção. A consulta federada depende da disponibilidade do endpoint externo da DBpedia e da permissão de acesso externo no ambiente de execução.
+A reprodução confirma a leitura e consulta dos dados fictícios da prova de conceito. Ela não valida assinaturas criptográficas reais, não consulta plataformas governamentais reais e não testa implantação em ambiente institucional de produção. As consultas federadas dependem da disponibilidade dos endpoints externos utilizados e da permissão de acesso externo no ambiente de execução.
