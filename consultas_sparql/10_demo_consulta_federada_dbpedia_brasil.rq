@@ -1,0 +1,50 @@
+# Demonstração federada — dados locais da OntoDiplomaDigital e contexto externo na DBpedia
+#
+# Esta consulta combina dados fictícios da ABox pública com uma consulta externa à DBpedia.
+# A federação é demonstrativa: ela não consulta sistemas reais do MEC, e-MEC ou Gov.br,
+# nem valida diplomas reais. O objetivo é mostrar que o grafo local pode ser combinado
+# com uma fonte externa de dados ligados por meio de SERVICE.
+
+PREFIX odd:  <https://w3id.org/ufes/ontodiplomadigital#>
+PREFIX dbr:  <http://dbpedia.org/resource/>
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?cpf
+       ?titular
+       ?diploma
+       ?cursoConcluido
+       ?iesEmissora
+       ?paisContexto
+       ?paisLabel
+       ?tipoExterno
+       ?fonteExterna
+WHERE {
+  VALUES ?cpf {
+    "CPF-FICTICIO-0012"
+  }
+
+  ?diplomado a odd:Diplomado ;
+             odd:cpf ?cpf ;
+             odd:fullName ?titular .
+
+  ?diploma a odd:DiplomaDigital ;
+           odd:hasHolder ?diplomado ;
+           odd:hasProgram ?curso ;
+           odd:issuedBy ?recursoIesEmissora .
+
+  ?curso odd:courseName ?cursoConcluido .
+  ?recursoIesEmissora odd:fullName ?iesEmissora .
+
+  SERVICE <https://dbpedia.org/sparql> {
+    BIND(dbr:Brazil AS ?paisContexto)
+    ?paisContexto rdfs:label ?paisLabel ;
+                  rdf:type ?tipoExterno .
+    FILTER(LANG(?paisLabel) = "en")
+    FILTER(?tipoExterno IN (dbo:Country, dbo:Place, dbo:PopulatedPlace))
+  }
+
+  BIND("DBpedia" AS ?fonteExterna)
+}
+LIMIT 3

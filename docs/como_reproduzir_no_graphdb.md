@@ -38,6 +38,7 @@ Para uma verificação rápida, recomenda-se começar por:
 
 - `08_demo_visao_360_diploma_por_cpf.rq`;
 - `09_demo_grafo_diploma_por_cpf.rq`.
+- `10_demo_consulta_federada_dbpedia_brasil.rq`, caso o ambiente tenha acesso à internet e permita consultas federadas externas.
 
 ## 5. Gerar o grafo visual
 
@@ -55,6 +56,8 @@ A consulta 08 deve retornar uma linha consolidando dados fictícios de um diplom
 
 A consulta 09 deve gerar um grafo visual centrado em um diploma fictício, ligado aos principais recursos relacionados ao Registro do Diploma.
 
+A consulta 10 deve retornar dados locais de um diploma fictício combinados com dados externos da DBpedia sobre o recurso `Brazil`.
+
 ## Limites da reprodução
 
-A reprodução confirma a leitura e consulta dos dados fictícios da prova de conceito. Ela não valida assinaturas criptográficas reais, não consulta plataformas governamentais reais e não testa implantação em ambiente institucional de produção.
+A reprodução confirma a leitura e consulta dos dados fictícios da prova de conceito. Ela não valida assinaturas criptográficas reais, não consulta plataformas governamentais reais e não testa implantação em ambiente institucional de produção. A consulta federada depende da disponibilidade do endpoint externo da DBpedia e da permissão de acesso externo no ambiente de execução.

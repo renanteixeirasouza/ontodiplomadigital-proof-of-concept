@@ -1,0 +1,20 @@
+{
+  "consulta": "consultas_sparql/10_demo_consulta_federada_dbpedia_brasil.rq",
+  "ambiente": "GraphDB, repositorio diplomaDB",
+  "data_execucao": "2026-09-02",
+  "tipo": "consulta federada demonstrativa",
+  "fonte_local": "ABox publica ficticia da OntoDiplomaDigital carregada no repositorio diplomaDB",
+  "fonte_externa": "DBpedia SPARQL endpoint",
+  "endpoint_externo": "https://dbpedia.org/sparql",
+  "resultado": {
+    "status": "executada com sucesso",
+    "linhas_retornadas": 3,
+    "observacao": "A consulta retornou dados locais do diploma ficticio associado ao CPF-FICTICIO-0012 combinados com classes externas da DBpedia para o recurso Brazil."
+  },
+  "limites": [
+    "A consulta nao acessa sistemas reais do MEC, e-MEC ou Gov.br.",
+    "A consulta nao valida diplomas reais.",
+    "A consulta nao realiza validacao criptografica de assinatura digital.",
+    "A reproducao depende da disponibilidade do endpoint publico da DBpedia."
+  ]
+}

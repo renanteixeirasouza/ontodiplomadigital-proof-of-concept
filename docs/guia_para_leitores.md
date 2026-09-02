@@ -38,6 +38,7 @@ As consultas 01 a 07 estão relacionadas às questões de competência da ontolo
 
 - `08_demo_visao_360_diploma_por_cpf.rq`: retorna uma visão tabular consolidada de um diploma a partir de um CPF fictício;
 - `09_demo_grafo_diploma_por_cpf.rq`: gera um grafo visual com as principais relações do diploma.
+- `10_demo_consulta_federada_dbpedia_brasil.rq`: demonstra a combinação entre dados locais fictícios e uma fonte externa de dados ligados, usando DBpedia.
 
 ### 4. Validação
 
@@ -48,3 +49,5 @@ A pasta `validacao/` registra verificações realizadas sobre os arquivos públi
 O resultado não deve ser entendido como um sistema de produção para emissão ou registro de diplomas. A prova de conceito demonstra a capacidade da ontologia de representar e recuperar relações semânticas do subdomínio do Registro do Diploma.
 
 O uso de dados fictícios permite tornar os artefatos públicos sem expor informações pessoais, acadêmicas ou institucionais reais.
+
+A consulta federada tem caráter demonstrativo. Ela evidencia a possibilidade técnica de combinar o grafo local com uma fonte externa, mas não corresponde a integração institucional real com sistemas oficiais.

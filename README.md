@@ -35,7 +35,8 @@ Se você não tem familiaridade com ontologias, RDF ou SPARQL, comece por:
 │   ├── 06_qc6_proveniencia_registro.rq
 │   ├── 07_qc7_acesso_por_cpf_plataforma.rq
 │   ├── 08_demo_visao_360_diploma_por_cpf.rq
-│   └── 09_demo_grafo_diploma_por_cpf.rq
+│   ├── 09_demo_grafo_diploma_por_cpf.rq
+│   └── 10_demo_consulta_federada_dbpedia_brasil.rq
 ├── graficos/
 │   └── fluxo_prova_conceito.svg
 ├── validacao/
@@ -74,6 +75,11 @@ A prova de conceito demonstra que a OntoDiplomaDigital permite:
 - recuperar informações por consultas SPARQL;
 - relacionar o diploma ao titular, curso, instituições emissora e registradora, registro, assinatura, carimbo de tempo, código de validação e plataforma de acesso;
 - visualizar uma parte do grafo de conhecimento gerado a partir de um CPF fictício.
+- executar uma consulta federada demonstrativa, combinando dados locais fictícios com uma fonte externa de dados ligados.
+
+## Consulta federada
+
+A consulta `10_demo_consulta_federada_dbpedia_brasil.rq` usa `SERVICE` para combinar dados locais da ABox pública com dados externos da DBpedia sobre o recurso `Brazil`. Ela tem finalidade demonstrativa e depende da disponibilidade do endpoint público da DBpedia. Não se trata de integração real com sistemas do MEC, e-MEC ou Gov.br.
 
 ## Referência acadêmica
 

@@ -13,5 +13,8 @@ Esta pasta contém as consultas usadas para verificar a OntoDiplomaDigital na pr
 | `07_qc7_acesso_por_cpf_plataforma.rq` | Demonstra a recuperação de plataforma de acesso associada a um CPF fictício. |
 | `08_demo_visao_360_diploma_por_cpf.rq` | Consolida uma visão tabular de um diploma fictício a partir de CPF. |
 | `09_demo_grafo_diploma_por_cpf.rq` | Gera um grafo visual das principais relações de um diploma fictício. |
+| `10_demo_consulta_federada_dbpedia_brasil.rq` | Demonstra consulta federada com `SERVICE`, combinando dados locais fictícios com dados externos da DBpedia sobre o Brasil. |
 
-As consultas foram preparadas para a ABox pública sanitizada. O CPF de demonstração usado nas consultas 07, 08 e 09 é `CPF-FICTICIO-0012`.
+As consultas foram preparadas para a ABox pública sanitizada. O CPF de demonstração usado nas consultas 07, 08, 09 e 10 é `CPF-FICTICIO-0012`.
+
+A consulta 10 depende da disponibilidade do endpoint público da DBpedia. Ela não representa integração real com sistemas do MEC, e-MEC ou Gov.br.
