@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "OntoDiplomaDigital Proof of Concept"
+message: "If you use this repository, please cite it as described in this file."
+type: software
+authors:
+  - family-names: "Souza"
+    given-names: "Renan Teixeira de"
+date-released: "2026-09-02"
+repository-code: "https://github.com/renanteixeirasouza/ontodiplomadigital-proof-of-concept"
+url: "https://github.com/renanteixeirasouza/ontodiplomadigital-proof-of-concept"
+abstract: "Public proof-of-concept artifacts for OntoDiplomaDigital, an operational ontology for the semantic representation of the Brazilian Digital Diploma registration subdomain."
+keywords:
+  - ontology
+  - semantic web
+  - linked data
+  - digital diploma
+  - RDF
+  - OWL
+  - SPARQL
+  - GraphDB
+license: "CC-BY-4.0"
