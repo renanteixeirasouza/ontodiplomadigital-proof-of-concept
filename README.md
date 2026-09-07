@@ -101,7 +101,5 @@ Salvo indicação em contrário, os artefatos autorais deste repositório são d
 
 Os arquivos XSD preservados em `fontes_oficiais_mec/` são fontes oficiais externas do Ministério da Educação e foram incluídos apenas para fins de rastreabilidade acadêmica.
 
-## Referência acadêmica
 
-Este repositório acompanha a dissertação de mestrado sobre a OntoDiplomaDigital. Na dissertação, ele deve ser citado como apêndice técnico da prova de conceito.
 
