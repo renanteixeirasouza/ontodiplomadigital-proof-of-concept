@@ -105,4 +105,3 @@ Os arquivos XSD preservados em `fontes_oficiais_mec/` são fontes oficiais exter
 
 Este repositório acompanha a dissertação de mestrado sobre a OntoDiplomaDigital. Na dissertação, ele deve ser citado como apêndice técnico da prova de conceito.
 
-Consulte também: [texto sugerido para o apêndice](docs/texto_apendice_dissertacao.md).
