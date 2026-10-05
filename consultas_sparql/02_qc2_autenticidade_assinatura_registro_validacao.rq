@@ -17,7 +17,7 @@ SELECT ?diploma ?identificadorDiploma
        ?codigoValidacao ?valorCodigoValidacao
 WHERE {
   VALUES ?identificadorDiploma {
-    "urn:fake:diploma:001"
+    "urn:synthetic:diploma:001"
   }
 
   ?diploma a odd:DiplomaDigital ;

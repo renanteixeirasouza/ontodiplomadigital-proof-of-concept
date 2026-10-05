@@ -1,0 +1,77 @@
+{
+  "head" : {
+    "vars" : [
+      "diploma",
+      "identificadorDiploma",
+      "registro",
+      "dataRegistro",
+      "assinatura",
+      "dataHoraAssinatura",
+      "carimboTempo",
+      "dataHoraCarimbo",
+      "formatoAssinaturaLabel",
+      "papelAssinaturaLabel",
+      "codigoValidacao",
+      "valorCodigoValidacao"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "diploma" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1"
+        },
+        "identificadorDiploma" : {
+          "type" : "literal",
+          "value" : "urn:synthetic:diploma:001"
+        },
+        "registro" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#registroCaso1"
+        },
+        "dataRegistro" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+          "type" : "literal",
+          "value" : "2027-01-15"
+        },
+        "assinatura" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#assinaturaCaso1"
+        },
+        "dataHoraAssinatura" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type" : "literal",
+          "value" : "2027-01-15T14:10:00"
+        },
+        "carimboTempo" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#carimboTempoCaso1"
+        },
+        "dataHoraCarimbo" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type" : "literal",
+          "value" : "2027-01-15T14:10:00"
+        },
+        "formatoAssinaturaLabel" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "XAdES"
+        },
+        "papelAssinaturaLabel" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "assinatura PJ da registradora"
+        },
+        "codigoValidacao" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#codigoValidacaoPublico0757"
+        },
+        "valorCodigoValidacao" : {
+          "type" : "literal",
+          "value" : "CODIGO-VALIDACAO-FICTICIO-0002"
+        }
+      }
+    ]
+  }
+}

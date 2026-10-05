@@ -1,0 +1,434 @@
+{
+  "head" : {
+    "vars" : [
+      "categoria",
+      "valorControlado",
+      "rotulo",
+      "qtdUsos"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "formato de assinatura"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#CAdES"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "CAdES"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "83"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "formato de assinatura"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#PAdES"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "PAdES"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "84"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "formato de assinatura"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#XAdES"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "XAdES"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "85"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "grau conferido"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Bacharelado"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Bacharelado"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "85"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "grau conferido"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Licenciatura"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Licenciatura"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "83"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "grau conferido"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Tecnologia"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Tecnologia"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "84"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "modalidade de oferta"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Ead"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Educação a Distância"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "83"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "modalidade de oferta"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Presencial"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Presencial"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "85"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "modalidade de oferta"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Semipresencial"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Semipresencial"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "84"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "papel da assinatura"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#AssinaturaPFEmissora"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "assinatura PF da emissora"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "50"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "papel da assinatura"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#AssinaturaPFResponsavelRegistro"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "assinatura PF do responsável pelo registro"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "50"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "papel da assinatura"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#AssinaturaPJEmissora"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "assinatura PJ da emissora"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "51"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "papel da assinatura"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#AssinaturaPJRegistradora"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "assinatura PJ da registradora"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "51"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "papel da assinatura"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#AssinaturaPJArquivamentoDocumentacaoAcademica"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "assinatura PJ de arquivamento da documentação acadêmica"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "50"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "situação do diploma"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Anulado"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Anulado"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "50"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "situação do diploma"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Ativo"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Ativo"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "151"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "situação do diploma"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Revogado"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Revogado"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "51"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "título conferido"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Bacharel"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Bacharel"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "85"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "título conferido"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Licenciado"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Licenciado"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "83"
+        }
+      },
+      {
+        "categoria" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "título conferido"
+        },
+        "valorControlado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Tecnologo"
+        },
+        "rotulo" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Tecnólogo"
+        },
+        "qtdUsos" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+          "type" : "literal",
+          "value" : "84"
+        }
+      }
+    ]
+  }
+}

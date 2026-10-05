@@ -1,0 +1,139 @@
+{
+  "head" : {
+    "vars" : [
+      "cpf",
+      "titular",
+      "diploma",
+      "identificadorDiploma",
+      "cursoConcluido",
+      "grau",
+      "tituloConferido",
+      "modalidade",
+      "dataConclusao",
+      "dataExpedicao",
+      "dataEmissao",
+      "iesEmissora",
+      "iesRegistradora",
+      "dataRegistro",
+      "numeroProcesso",
+      "responsavelRegistro",
+      "situacaoDiploma",
+      "formatoAssinatura",
+      "dataHoraAssinatura",
+      "dataHoraCarimbo",
+      "codigoValidacao",
+      "plataformaAcesso",
+      "evidenciaDisponivel"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "cpf" : {
+          "type" : "literal",
+          "value" : "CPF-FICTICIO-0012"
+        },
+        "titular" : {
+          "type" : "literal",
+          "value" : "Pessoa Fictícia-0012"
+        },
+        "diploma" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaLote001"
+        },
+        "identificadorDiploma" : {
+          "type" : "literal",
+          "value" : "urn:synthetic:diploma:003"
+        },
+        "cursoConcluido" : {
+          "type" : "literal",
+          "value" : "Bacharelado em Ciencia de Dados Publicos"
+        },
+        "grau" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Bacharelado"
+        },
+        "tituloConferido" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Bacharel"
+        },
+        "modalidade" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Presencial"
+        },
+        "dataConclusao" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+          "type" : "literal",
+          "value" : "2026-01-13"
+        },
+        "dataExpedicao" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+          "type" : "literal",
+          "value" : "2026-02-04"
+        },
+        "dataEmissao" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+          "type" : "literal",
+          "value" : "2026-02-14"
+        },
+        "iesEmissora" : {
+          "type" : "literal",
+          "value" : "Universidade Aberta do Conhecimento"
+        },
+        "iesRegistradora" : {
+          "type" : "literal",
+          "value" : "Universidade Registradora do Brasil Digital"
+        },
+        "dataRegistro" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+          "type" : "literal",
+          "value" : "2026-02-19"
+        },
+        "numeroProcesso" : {
+          "type" : "literal",
+          "value" : "PROC-SYNTHETIC-2026-0003"
+        },
+        "responsavelRegistro" : {
+          "type" : "literal",
+          "value" : "Pessoa Fictícia-0013"
+        },
+        "situacaoDiploma" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Ativo"
+        },
+        "formatoAssinatura" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "XAdES"
+        },
+        "dataHoraAssinatura" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type" : "literal",
+          "value" : "2026-02-19T09:11:00"
+        },
+        "dataHoraCarimbo" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type" : "literal",
+          "value" : "2026-02-19T09:11:00"
+        },
+        "codigoValidacao" : {
+          "type" : "literal",
+          "value" : "CODIGO-VALIDACAO-FICTICIO-0006"
+        },
+        "plataformaAcesso" : {
+          "type" : "literal",
+          "value" : "GovBR Academico Ficticio"
+        },
+        "evidenciaDisponivel" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Metadados de registro, assinatura e validação recuperados no grafo sintético"
+        }
+      }
+    ]
+  }
+}

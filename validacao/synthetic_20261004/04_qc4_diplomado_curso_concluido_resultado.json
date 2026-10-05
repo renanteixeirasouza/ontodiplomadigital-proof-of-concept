@@ -1,0 +1,75 @@
+{
+  "head" : {
+    "vars" : [
+      "diploma",
+      "identificadorDiploma",
+      "diplomado",
+      "nomeDiplomado",
+      "cpf",
+      "curso",
+      "nomeCurso",
+      "dataConclusao",
+      "grau",
+      "grauLabel",
+      "titulo",
+      "tituloLabel"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "diploma" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1"
+        },
+        "identificadorDiploma" : {
+          "type" : "literal",
+          "value" : "urn:synthetic:diploma:001"
+        },
+        "diplomado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomadoCaso1"
+        },
+        "nomeDiplomado" : {
+          "type" : "literal",
+          "value" : "Pessoa Fictícia-0001"
+        },
+        "cpf" : {
+          "type" : "literal",
+          "value" : "CPF-FICTICIO-0001"
+        },
+        "curso" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#cursoCaso1"
+        },
+        "nomeCurso" : {
+          "type" : "literal",
+          "value" : "Bacharelado em Gestao do Conhecimento Aplicado"
+        },
+        "dataConclusao" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+          "type" : "literal",
+          "value" : "2026-12-18"
+        },
+        "grau" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Bacharelado"
+        },
+        "grauLabel" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Bacharelado"
+        },
+        "titulo" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Bacharel"
+        },
+        "tituloLabel" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Bacharel"
+        }
+      }
+    ]
+  }
+}

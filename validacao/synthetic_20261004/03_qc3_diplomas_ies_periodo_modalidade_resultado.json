@@ -1,0 +1,54 @@
+{
+  "head" : {
+    "vars" : [
+      "diploma",
+      "dataEmissao",
+      "ies",
+      "nomeIes",
+      "curso",
+      "nomeCurso",
+      "modalidade",
+      "modalidadeLabel"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "diploma" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1"
+        },
+        "dataEmissao" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+          "type" : "literal",
+          "value" : "2027-01-10"
+        },
+        "ies" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesEmissoraCaso1"
+        },
+        "nomeIes" : {
+          "type" : "literal",
+          "value" : "Universidade do Vale do Conhecimento"
+        },
+        "curso" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#cursoCaso1"
+        },
+        "nomeCurso" : {
+          "type" : "literal",
+          "value" : "Bacharelado em Gestao do Conhecimento Aplicado"
+        },
+        "modalidade" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital#Presencial"
+        },
+        "modalidadeLabel" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "Presencial"
+        }
+      }
+    ]
+  }
+}

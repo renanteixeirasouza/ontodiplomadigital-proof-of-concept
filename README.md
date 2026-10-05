@@ -58,8 +58,7 @@ Se você não tem familiaridade com ontologias, RDF ou SPARQL, comece por:
 │   └── validacao_local_consultas_publicas.json
 └── docs/
     ├── guia_para_leitores.md
-    ├── como_reproduzir_no_graphdb.md
-    └── texto_apendice_dissertacao.md
+    └── como_reproduzir_no_graphdb.md
 ```
 
 ## O que cada pasta contém
@@ -103,3 +102,7 @@ Os arquivos XSD preservados em `fontes_oficiais_mec/` são fontes oficiais exter
 
 
 
+
+## Atualização dos identificadores — 2026-10-04
+
+Os dados e consultas atuais usam `synthetic`, como em `urn:synthetic:diploma:001`. Consulte o [lote de atualização e suas evidências](validacao/synthetic_20261004/README.md), que distingue os resultados atuais dos relatórios históricos.

@@ -1,0 +1,78 @@
+@prefix odd: <https://w3id.org/ufes/ontodiplomadigital#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaLote001> rdfs:label
+    "Diploma";
+  odd:hasHolder <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomadoLote001>;
+  odd:hasProgram <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#cursoLote001>;
+  odd:issuedBy <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesEmissoraLote01>;
+  odd:registeredBy <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesRegistradoraLote01>;
+  odd:hasRegistration <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#registroLote001>;
+  odd:hasSignature <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#assinaturaLote001>;
+  odd:hasValidationCode <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#codigoValidacaoPublico0759>;
+  odd:isAccessibleVia <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#plataformaGovBrAcademicoFicticio>;
+  odd:hasStatus odd:Ativo .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomadoLote001> rdfs:label
+    "Pessoa Fictícia-0012" .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#cursoLote001> rdfs:label
+    "Bacharelado em Ciencia de Dados Publicos";
+  odd:awardsDegree odd:Bacharelado;
+  odd:awardsTitle odd:Bacharel;
+  odd:hasModeOfDelivery odd:Presencial .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesEmissoraLote01>
+  rdfs:label "Universidade Aberta do Conhecimento" .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesRegistradoraLote01>
+  rdfs:label "Universidade Registradora do Brasil Digital" .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#plataformaGovBrAcademicoFicticio>
+  rdfs:label "GovBR Academico Ficticio" .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#codigoValidacaoPublico0759>
+  rdfs:label "CODIGO-VALIDACAO-FICTICIO-0006" .
+
+odd:Ativo rdfs:label "Ativo"@pt .
+
+odd:Bacharelado rdfs:label "Bacharelado"@pt .
+
+odd:Bacharel rdfs:label "Bacharel"@pt .
+
+odd:Presencial rdfs:label "Presencial"@pt .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#registroLote001> rdfs:label
+    "Registro";
+  odd:hasAdministrativeProcess <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#processoAdministrativo003>;
+  odd:hasRegistrationResponsible <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#responsavelRegistroLote001>;
+  odd:hasRegistrationSigner <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#assinanteRegistroLote001A> .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#processoAdministrativo003>
+  rdfs:label "PROC-SYNTHETIC-2026-0003" .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#responsavelRegistroLote001>
+  rdfs:label "Pessoa Fictícia-0013" .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#assinanteRegistroLote001A>
+  rdfs:label "Assinante Fictício-0014" .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#assinaturaLote001>
+  rdfs:label "Assinatura";
+  odd:hasSignatureFormat odd:XAdES;
+  odd:hasSignatureRole odd:AssinaturaPFResponsavelRegistro;
+  odd:hasTimestamp <https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#carimboTempoLote001> .
+
+odd:XAdES rdfs:label "XAdES"@pt .
+
+odd:AssinaturaPFResponsavelRegistro rdfs:label "assinatura PF do responsável pelo registro"@pt .
+
+<https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#carimboTempoLote001>
+  rdfs:label "Carimbo" .

@@ -10,3 +10,5 @@ Esta pasta contém arquivos CSV utilizados como apoio à prova de conceito.
 | `tabela_individuos_registro_diploma_publico.csv` | Relação de indivíduos representados na ABox pública. |
 
 Todos os arquivos usam dados fictícios ou sanitizados.
+
+Na versão de 2026-10-04, os identificadores usam `synthetic`. Consulte o [registro do lote](../validacao/synthetic_20261004/README.md).

@@ -1,0 +1,47 @@
+{
+  "head" : {
+    "vars" : [
+      "cpf",
+      "diplomado",
+      "diploma",
+      "plataforma",
+      "nomePlataforma",
+      "codigoValidacao",
+      "valorCodigoValidacao"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "cpf" : {
+          "type" : "literal",
+          "value" : "CPF-FICTICIO-0012"
+        },
+        "diplomado" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomadoLote001"
+        },
+        "diploma" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaLote001"
+        },
+        "plataforma" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#plataformaGovBrAcademicoFicticio"
+        },
+        "nomePlataforma" : {
+          "type" : "literal",
+          "value" : "GovBR Academico Ficticio"
+        },
+        "codigoValidacao" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#codigoValidacaoPublico0759"
+        },
+        "valorCodigoValidacao" : {
+          "type" : "literal",
+          "value" : "CODIGO-VALIDACAO-FICTICIO-0006"
+        }
+      }
+    ]
+  }
+}

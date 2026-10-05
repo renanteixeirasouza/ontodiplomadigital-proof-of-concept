@@ -10,7 +10,7 @@ SELECT ?diploma ?identificadorDiploma
        ?papelInstitucional ?ies ?nomeIes
 WHERE {
   VALUES ?identificadorDiploma {
-    "urn:fake:diploma:001"
+    "urn:synthetic:diploma:001"
   }
 
   ?diploma a odd:DiplomaDigital ;

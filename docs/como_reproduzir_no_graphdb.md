@@ -63,3 +63,7 @@ A consulta 11 deve retornar a contagem local de diplomados fictícios associados
 ## Limites da reprodução
 
 A reprodução confirma a leitura e consulta dos dados fictícios da prova de conceito. Ela não valida assinaturas criptográficas reais, não consulta plataformas governamentais reais e não testa implantação em ambiente institucional de produção. As consultas federadas dependem da disponibilidade dos endpoints externos utilizados e da permissão de acesso externo no ambiente de execução.
+
+## Atualização synthetic (2026-10-04)
+
+Para reproduzir os dados atuais, carregue TBox e ABox em um repositório vazio. Evite sobrepor a ABox atual à anterior: a importação por acréscimo pode manter os identificadores antigos. As consultas 01, 02 e 04 usam `urn:synthetic:diploma:001`. Consulte os [resultados e limites do lote](../validacao/synthetic_20261004/README.md).

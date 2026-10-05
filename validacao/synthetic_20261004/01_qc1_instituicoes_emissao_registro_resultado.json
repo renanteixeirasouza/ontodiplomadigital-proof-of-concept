@@ -1,0 +1,61 @@
+{
+  "head" : {
+    "vars" : [
+      "diploma",
+      "identificadorDiploma",
+      "papelInstitucional",
+      "ies",
+      "nomeIes"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "diploma" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1"
+        },
+        "identificadorDiploma" : {
+          "type" : "literal",
+          "value" : "urn:synthetic:diploma:001"
+        },
+        "papelInstitucional" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "emissão"
+        },
+        "ies" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesEmissoraCaso1"
+        },
+        "nomeIes" : {
+          "type" : "literal",
+          "value" : "Universidade do Vale do Conhecimento"
+        }
+      },
+      {
+        "diploma" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#diplomaCaso1"
+        },
+        "identificadorDiploma" : {
+          "type" : "literal",
+          "value" : "urn:synthetic:diploma:001"
+        },
+        "papelInstitucional" : {
+          "xml:lang" : "pt",
+          "type" : "literal",
+          "value" : "registro"
+        },
+        "ies" : {
+          "type" : "uri",
+          "value" : "https://w3id.org/ufes/ontodiplomadigital/instancias-ficticias#iesRegistradoraCaso1"
+        },
+        "nomeIes" : {
+          "type" : "literal",
+          "value" : "Universidade Nacional da Curadoria"
+        }
+      }
+    ]
+  }
+}
