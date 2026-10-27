@@ -494,16 +494,16 @@ odd:OE3
     rdfs:label "Construção do modelo conceitual"@pt ;
     rdfs:label "Conceptual model construction"@en ;
     skos:definition
-        "Construir um modelo conceitual do subdomínio do Registro do Diploma, representando as entidades, relações e restrições essenciais à certificação acadêmica digital."@pt ,
-        "Build a conceptual model of the Diploma Registration subdomain, representing the entities, relationships, and constraints essential to digital academic certification."@en .
+        "Construir um modelo conceitual do subdomínio do Registro do Diploma, consolidando as entidades, relações e restrições essenciais à certificação acadêmica digital."@pt ,
+        "Build a conceptual model of the Diploma Registration subdomain, consolidating the entities, relationships, and constraints essential to digital academic certification."@en .
 
 odd:OE4
     a odd:ObjetivoEspecifico ;
-    rdfs:label "Mapeamento conceitual e relacional"@pt ;
-    rdfs:label "Conceptual and relational mapping"@en ;
+    rdfs:label "Correspondências para a ontologia operacional"@pt ;
+    rdfs:label "Correspondences for the operational ontology"@en ;
     skos:definition
-        "Mapear os elementos conceituais e relacionais necessários à modelagem de uma ontologia operacional de domínio centrada nos dados públicos de certificação do diploma digital."@pt ,
-        "Map the conceptual and relational elements required to model an operational domain ontology centered on public digital diploma certification data."@en .
+        "Estabelecer correspondências entre os elementos dos XML/XSD, o modelo conceitual do subdomínio do Registro do Diploma e os termos selecionados para a ontologia operacional."@pt ,
+        "Establish correspondences between XML/XSD elements, the conceptual model of the Diploma Registration subdomain, and the terms selected for the operational ontology."@en .
 
 odd:OE5
     a odd:ObjetivoEspecifico ;

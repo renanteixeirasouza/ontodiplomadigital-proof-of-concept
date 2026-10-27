@@ -106,3 +106,8 @@ Os arquivos XSD preservados em `fontes_oficiais_mec/` são fontes oficiais exter
 ## Atualização dos identificadores — 2026-10-04
 
 Os dados e consultas atuais usam `synthetic`, como em `urn:synthetic:diploma:001`. Consulte o [lote de atualização e suas evidências](validacao/synthetic_20261004/README.md), que distingue os resultados atuais dos relatórios históricos.
+
+
+## Retificação após a defesa
+
+Em 27/10/2026, as definições de OE3 e OE4 foram sincronizadas com a dissertação, distinguindo modelo conceitual e correspondências para a ontologia operacional. Consulte o [registro da correção e validação](docs/retificacao_objetivos_pos_defesa_20261027.md).

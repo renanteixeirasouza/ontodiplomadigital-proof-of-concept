@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-27",
+  "scope": "Retificação textual de OE3 e OE4 após defesa; sem alteração de axiomas, IRIs, ABox ou consultas.",
+  "source_dissertation": {
+    "file": "2026-10-06 - DissertacaoRenanPPGCI.docx",
+    "sha256": "8476fe5a04aa8ec8db20464a63bd7a84c69cd15ebfcf84f1720b98199a0b9617"
+  },
+  "graphs": {
+    "canonical_local": {
+      "syntax_valid": true,
+      "triples_before": 3009,
+      "triples_after": 3009,
+      "replaced_annotation_triples": 6,
+      "non_target_graph_isomorphic": true,
+      "qc_objective_links_preserved": true,
+      "sha256_before": "0c908d2bfceef6192911420a9f367f2d13698428e32bfffcad7d347de0044833",
+      "sha256_after": "d7caa4da285c0fdad639e731fd14ff33c53252c1c670a1bd3b0d5fb4dfb396b2"
+    },
+    "public": {
+      "syntax_valid": true,
+      "triples_before": 3009,
+      "triples_after": 3009,
+      "replaced_annotation_triples": 6,
+      "non_target_graph_isomorphic": true,
+      "qc_objective_links_preserved": true,
+      "sha256_before": "0331167b25b8c21cca8ff1fad3527100b88cdc1b79d06de1e83ff735f4cb3306",
+      "sha256_after": "a4afe0b8d9d13168ba6763fba1dab403d1aed356bc1a11bbe5d743e666f3c46a"
+    }
+  },
+  "queries": [
+    {
+      "file": "01_qc1_instituicoes_emissao_registro.rq",
+      "rows": 2,
+      "results_unchanged": true,
+      "engine": "RDFLib 7.6.0, sem inferência adicional"
+    },
+    {
+      "file": "02_qc2_autenticidade_assinatura_registro_validacao.rq",
+      "rows": 1,
+      "results_unchanged": true,
+      "engine": "RDFLib 7.6.0, sem inferência adicional"
+    },
+    {
+      "file": "03_qc3_diplomas_ies_periodo_modalidade.rq",
+      "rows": 1,
+      "results_unchanged": true,
+      "engine": "RDFLib 7.6.0, sem inferência adicional"
+    },
+    {
+      "file": "04_qc4_diplomado_curso_concluido.rq",
+      "rows": 1,
+      "results_unchanged": true,
+      "engine": "RDFLib 7.6.0, sem inferência adicional"
+    },
+    {
+      "file": "05_qc5_valores_controlados.rq",
+      "rows": 20,
+      "results_unchanged": true,
+      "engine": "RDFLib 7.6.0, sem inferência adicional"
+    },
+    {
+      "file": "06_qc6_proveniencia_registro.rq",
+      "rows": 303,
+      "results_unchanged": true,
+      "engine": "RDFLib 7.6.0, sem inferência adicional"
+    },
+    {
+      "file": "07_qc7_acesso_por_cpf_plataforma.rq",
+      "rows": 1,
+      "results_unchanged": true,
+      "engine": "RDFLib 7.6.0, sem inferência adicional"
+    },
+    {
+      "file": "08_demo_visao_360_diploma_por_cpf.rq",
+      "rows": 1,
+      "results_unchanged": true,
+      "engine": "RDFLib 7.6.0, sem inferência adicional"
+    }
+  ],
+  "abox": {
+    "triples": 25553,
+    "unchanged": true,
+    "sha256": "fc3b5f6453abec92e8aa7e4a92c689585bcc7e88c514d867665e5672baa2d4f7"
+  },
+  "queries_not_reexecuted": {
+    "09": "Consulta CONSTRUCT não reexecutada; a comparação dos grafos confirmou que nenhuma afirmação do domínio foi alterada.",
+    "10_11": "Consultas federadas não reexecutadas; nenhuma fonte externa ou consulta foi alterada."
+  },
+  "historical_reports": "Relatórios e checksums de lotes anteriores foram preservados como registros históricos. O hash público atual da TBox está neste relatório."
+}
